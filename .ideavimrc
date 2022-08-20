@@ -1,0 +1,49 @@
+let mapleader=" "
+
+"" options
+set ruler
+set number
+set relativenumber
+set nu
+set scrolloff=5
+set incsearch
+set encoding=UTF-8
+
+"" maps
+nmap <leader>h <action>(PreviousTab)
+nmap <leader>l <action>(NextTab)
+nmap <leader>x <action>(CloseEditor)
+
+map <leader>ca <Action>(ShowIntentionActions)
+
+"" Find and Search
+map / <Action>(Find)
+map <leader>/ <Action>(FindInPath)
+map <leader>ff <Action>(GotoFile)
+
+"" Project tree
+set NERDTree
+map <c-n> :NERDTreeToggle<CR>
+
+"" Zen mode
+nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
+
+"" Terminal
+nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
+
+"" Window
+nnoremap <c-\> :action SplitVertically<CR>
+nnoremap <c--> :action SplitHorizontally<CR>
+nnoremap <c-=> :action Unsplit<CR>
+nnoremap <c-m> :action MoveEditorToOppositeTabGroup<CR>
+
+nnoremap <c-h> <c-w>
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+
+nmap <TAB> <Action>(NextTab)
+nmap <s-TAB> <Action>(PreviousTab)
+
+nmap <leader>en <Action>(EditSourceInNewWindow)
+nmap <leader>n <Action>(NextWindow)

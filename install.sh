@@ -7,3 +7,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.config}"/nvim/autoload/plug.vim --crea
 
 # Nvim symlink
 ln -sf ${dotfiledir}/.config/nvim/init.vim ~/.config/nvim/
+
+# ideavim symlink
+ln -sf ${dotfiledir}/.ideavimrc ~
